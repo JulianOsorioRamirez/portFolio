@@ -50,6 +50,10 @@ body { min-height: 100vh; }
   font-Family: "Atkinson";
   src: url("./assets/fonts/Atkinson-Hyperlegible-Regular-102.otf")
 }
+@font-face {
+  font-Family: "Poopins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf")
+}
 
 @font-face {
   font-family: "WebSymbolsRegular";
@@ -272,4 +276,98 @@ transform: translateY(4px);
   /* margin: 23px 55px 20px 56px; */
   width: 80rem;
   margin-left: 7.5rem;
+}
+.taskDiv{
+  /* margin:0; */
+    width: 90rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 5rem;
+    /* align-items: center; */
+    
+}
+.taskProject{
+  width: 500px;
+  height: 560px;
+  flex-grow: 0;
+  margin: 93px 220px 97px 108px;
+  padding: 25px 25px 45px;
+  box-shadow: 0 0 12px 0 #fff;
+  background-color: #0f1624;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+}
+.taskProject:hover{
+  border: 3px solid white
+}
+.producto_img img{
+  width: 350px;
+  height: 200px;
+  flex-grow: 0;
+  margin: 0 0 25px;
+  border-radius: 8px;
+}
+.taskTitle{
+  width: 262px;
+  height: 32px;
+  flex-grow: 0;
+  /* margin: 25px 159px 25px 158px; */
+  margin-left: 3rem;
+  text-align: cente;
+  font-Family: "Poopins";
+  font-size: 26px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.taskLine{
+  width: 289px;
+  height: 4px;
+  flex-grow: 0;
+  /* margin: 25px 100px; */
+  margin-left: 2rem;
+  border-radius: 83px;
+  background-image: linear-gradient(to left, #13adc7 100%, #6978d1 33%, #945dd6 0%);
+}
+.tasktText{
+  width: 280px;
+  /* height: 168px; */
+  flex-grow: 0;
+  margin: 25px 0;
+  font-Family: "Poopins";
+  margin-left: 2.5rem;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.btnTask{
+  width: 200px;
+  height: 60px;
+  flex-grow: 0;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2rem;
+
+  /* margin: 25px 300px 0 0; */
+  padding: 15px 52px;
+  border-radius: 83px;
+  background: white;  
+  box-shadow: 0 4px 4px 0 rgba(46, 56, 56, 0.51);
+  /* background-image: linear-gradient(to left, #13adc7 100%, #6978d1 33%, #945dd6 0%); */
+}
+.btnTask:hover {background-color: #818181}
+
+.btnTask:active {
+background-color: #666;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
 }
