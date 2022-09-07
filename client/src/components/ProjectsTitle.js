@@ -1,6 +1,6 @@
 function ProjecsTitle () {
     return(
-        <h1 className="projectsTitle">Projects</h1>
+        <h1 className="projectsTitle">Proyectos</h1>
     )
 }
 export default ProjecsTitle;

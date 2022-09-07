@@ -1,5 +1,6 @@
 // import cuberImg from "../assets/images/CUBER.jpg";
 import React, { useState,useEffect} from "react";
+import cuber from "../assets/images/CUBER.jpg"
 
 function ProjecstTask() {
     const[taskDates, setTaskDates] = useState("");
@@ -13,21 +14,28 @@ function ProjecstTask() {
     useEffect(()=>{
         if(taskDates){
           console.log(taskDates)
+          console.log(taskDates.img)
         }
     },[taskDates]);
 
   return (
-    <div className="taskDiv">
-      {taskDates ? taskDates.map((date,i)=><div className="taskProject">
+    <div className="taskCont">
+      {taskDates ? taskDates.map((date,i)=>
+      <div className="taskDiv">
+         <div className="taskProject">
+        
         <div className="producto_img">
-          <img src={date.img} alt="" />
+        <img className="imgCards" src={require(`../assets/images/` + date.img)} />
+          
         </div>
         <h1 className="taskTitle">{date.tittle}</h1>
         <div className="taskLine"></div>
         <p className="tasktText">{date.Description}</p>
         <button className="btnTask" >Visitar</button>
 
-      </div>) : ""}
+      </div>
+      </div>
+      ) : ""}
     </div>
   );
 }

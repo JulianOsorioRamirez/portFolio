@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
+import Icons from "./Icons"
+
 
 function Aboutme () {
     return(
         <div>
             <div className="aboutMeDiv">
+              {/* <p></p> */}
         <div className="presentationTittle">
           <h1 className="tittleMe">Julián Osorio Ramírez</h1>
+          <Icons/>
           <p className="textAboutMe">
             Desarrollador Web Full Stack Junior. inmerso en proyectos tanto en
             grupo como individuales, enfocados a un ámbito real y profesional,
@@ -15,7 +19,13 @@ function Aboutme () {
           </p>
         </div>
       {/* <button className="contactButton" onClick={go} >Contactame</button> */}
-      <button className="botonCarShop" >Contactame</button>
+      
+      
+      <button className="btnTask2" >Contactame</button>
+      
+      
+      
+      
 
 
       </div>
