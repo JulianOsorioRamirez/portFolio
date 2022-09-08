@@ -69,7 +69,7 @@ body { min-height: 100vh; }
 /*page*/
 .page{
   /* width: 1920px; */
-  height: 6160px;
+  height: 4755px;
   flex-grow: 0;
   padding: 0 0 80px;
   background-color: #0f1624;
@@ -117,6 +117,10 @@ body { min-height: 100vh; }
     height: 100%;
     font-size: 33px;
 
+}
+.loadImg{
+  width: 28px;
+  margin-left: 1rem;
 }
 .gitIconeImg{
   
@@ -184,6 +188,10 @@ body { min-height: 100vh; }
   
   
   height: 800px;
+}
+.contactButton{
+  margin-left: 10rem;
+  /* margin-top: 10rem; */
 }
 .tittleMe{
   /* margin-right: 20rem; */
@@ -349,6 +357,10 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
   flex-grow: 0;
   font-family: "Poopins";
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   /* margin-left: 2rem; */
   
   /* margin: 25px 300px 0 0; */
@@ -584,19 +596,22 @@ li.express:after{
 /*Aditional*/
 .aditionalSkills{
   margin-left: 8rem;
-    color: white;
+    
     font-size: 28px;
     font-family: "BalooPaaji";
 }
 .aditionalTitle{
   margin-left: 7rem;
-
+  color: white;
+}
+.pSkills{
+  color:#219ebc;
 }
 .divAskills{
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 10px;
-  margin-left: 9rem;
+  margin-left: 12rem
 
 }
 .checkImg{
@@ -606,6 +621,22 @@ li.express:after{
 }
 .pSkills{
   display: list-item;
+
+}
+.pSkills2{
+  display: list-item;
+  font-size: 25px;
+  font-family: "BalooPaaji";
+  color: #273B47;
+  margin-left: 4rem;
+}
+.pSkills3{
+  display: list-item;
+  font-size: 25px;
+  font-family: "BalooPaaji";
+  color: #273B47;
+  margin-left: 4rem;
+  /* margin-top: -1rem; */
 }
 /*Formation*/
 .formationTitle{
@@ -643,6 +674,12 @@ li.express:after{
   justify-content: center;
   color: white;
 }
+.scroll-area2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
 .scroll-area:nth-of-type(1) {
   background: #219ebc;
@@ -657,7 +694,7 @@ li.express:after{
 }
 
 .scroll-area:nth-of-type(4) {
-  background: #fb8500;
+  background: #98ca3f;
 }
 body::-webkit-scrollbar {
   width: 5px;               /* width of the entire scrollbar */
@@ -689,6 +726,13 @@ body::-webkit-scrollbar-thumb {
   margin-left: 2rem;
   color: black;
 }
+.textScroll3{
+  font-size: 20px;
+  font-family: "BalooPaaji";
+  text-align: left;
+  margin-left: 2rem;
+  color: white;
+}
 .imgCards2{
   
   height: 295px;
@@ -698,12 +742,15 @@ body::-webkit-scrollbar-thumb {
 .imgCards3{
   
   width: 330px;
-    margin-top: -20rem;
+
 }
 .educ{
   color: #0093E9;
 }
 .hab{
+  color: red;
+}
+.tech{
   color: red;
 }
 /* .bd{
@@ -712,3 +759,48 @@ body::-webkit-scrollbar-thumb {
 .uix{
   color: #B721FF;
 } */
+
+/*Footer*/
+footer{
+  box-shadow: 0 4px 4px 0 rgba(46, 56, 56, 0.51);
+  border: solid 1.5px #000;
+  /* width: 1920px; */
+  height: 137px;
+  flex-grow: 0;
+  /* margin: 0 0 157px; */
+  margin-bottom: 5rem;
+  padding: 44.7px 129px 44.7px 131.7px;
+  background-color: #0f1624;
+}
+.Call-me{
+  /* width: 272px; */
+  height: 126px;
+  flex-grow: 0;
+  /* margin: 0 134px 0 0; */
+  font-family: "BalooPaaji";
+  text-align: left;
+  color: #fff;
+  margin-left: 5rem;
+}
+.footerBtn{
+  display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding: 0;
+    color: aliceblue;
+    font-Family: "Atkinson";
+    
+    height: 100%;
+    font-size: 20px;
+}
+.footerBtn p{
+  margin-top: 2rem;
+}
+.footerBtn img:hover{
+  transform: scale(1.5);
+}
+.contact{
+  color: white;
+
+}

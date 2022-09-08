@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Technologies from "./Technologies";
 import Aditional from "./AditionalSkills";
 import Formation from "./Formation";
+import Footer from "./Footer";
 
 
 function Portfolio() {
@@ -21,6 +22,7 @@ function Portfolio() {
       <Projects/>
       <Technologies/>
       <Aditional/>
+      <Footer/>
       </div>
   );
 }

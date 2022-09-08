@@ -14,9 +14,13 @@ function Navbar () {
         <div>
           <nav className="navbar">
         <div className="navButtons">
-          <Link to="aboutMeDiv" spy={true} smooth={true} offset={-110} duration={500} className="navBtn">Sobre mí</Link>
+          <Link to="aboutMeDiv" spy={true} smooth={true} offset={-160} duration={500} className="navBtn">Sobre mí</Link>
+          <Link to="formationContainer" spy={true} smooth={true} offset={5} duration={500} className="navBtn">Formación</Link>
           <Link to="projects" spy={true} smooth={true} offset={10} duration={500} className="navBtn">Proyectos</Link>
           <Link to="techDiv" spy={true} smooth={true} offset={35} duration={500} className="navBtn">Tecnologias</Link>
+          <Link to="footer" spy={true} smooth={true} offset={50} duration={500} className="navBtn">Contactame</Link>
+
+          
           <img className="gitIconeImg" onClick={github} src={gitHupIcone} alt="" />
           <img className="gitIconeImg" onClick={linkedin} src={linkedinIcone} alt="" />
         </div>

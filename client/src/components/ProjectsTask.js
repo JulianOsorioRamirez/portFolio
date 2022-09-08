@@ -1,6 +1,7 @@
 // import cuberImg from "../assets/images/CUBER.jpg";
 import React, { useState,useEffect} from "react";
 import cuber from "../assets/images/CUBER.jpg"
+import loading from "../assets/images/loading-25.gif"
 
 function ProjecstTask() {
     const[taskDates, setTaskDates] = useState("");
@@ -31,7 +32,9 @@ function ProjecstTask() {
         <h1 className="taskTitle">{date.tittle}</h1>
         <div className="taskLine"></div>
         <p className="tasktText">{date.Description}</p>
-        <button className="btnTask" >Visitar</button>
+        <button className="btnTask" >Vista en progreso
+        <img className="loadImg" src={loading} alt="" />
+        </button>
 
       </div>
       </div>

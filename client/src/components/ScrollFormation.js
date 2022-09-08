@@ -3,6 +3,10 @@ import bGif from "../assets/images/bootcampGif.gif";
 import theBridgeLogo from "../assets/images/theBridgeLogo.png";
 
 function Scroll() {
+  function platzi () {
+    window.location.replace('https://platzi.com/');
+
+  }
   return (
     <div class="scroll-container">
       <div class="scroll-area">
@@ -32,14 +36,23 @@ function Scroll() {
       </div>
       <div class="scroll-area">
         <img className="imgCards3" src={theBridgeLogo} />
-        <p>Mi paso por The Bridge han sido mas de 480h en su gran mayoria practicas, donde no solo aprendi
-           el uso y entendimiento de las principales Technologias usadas en el sector, si no ademas el trabajo 
-           en equipo, la reolucion de problemas y la buena comunicacion tanto con mis compañeros de proyectos
-           como con las distintas verticales que forman el desarrollo de una aplicacion web, como UIX,Marketing, ciberseguridad
-           etc..
-        </p>
+        <div className="textScroll3">
+          <p>
+            Mi paso por The Bridge han sido más de 480h en su gran mayoría
+            prácticas, donde no solo aprendí el uso y entendimiento de las
+            principales <span className="tech">Tecnologías</span> usadas en el sector, si no ademas el trabajo
+            en <span className="tech">equipo</span>, la resolución de problemas y la buena comunicación tanto
+            con mis compañeros de proyecto como con las distintas verticales que
+            forman el <span className="tech">desarrollo</span> de una aplicación web, como UIX, Marketing,
+            ciberseguridad etc..
+          </p>
+        </div>
       </div>
-      <div class="scroll-area">4</div>
+      <div class="scroll-area">
+        <p className="pSkills2">Tambien he tomado cursos en un total de 100h en la plataforma educativa <u onClick={platzi}>Platzi.</u></p>
+        <p className="pSkills3">Ademas de diferentes cursos en Code Academy, Code wars y OpenWebinars</p>
+        <p className="pSkills2">Enfocados en reforzar la algoritmia y razonamiento lógico,El diseño de Webs y los diferentes y actuales FrameWorks de JavaScript</p>
+      </div>
     </div>
   );
 }

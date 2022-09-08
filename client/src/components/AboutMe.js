@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "react-scroll"
+
 import Icons from "./Icons"
 
 
@@ -17,11 +19,15 @@ function Aboutme () {
             tecnologías tanto para el front-end como el Back-end y la experiencia
             de trabajo con diferentes verticales del sector.
           </p>
+          
         </div>
       {/* <button className="contactButton" onClick={go} >Contactame</button> */}
       
       
-      <button className="btnTask2" >Contactame</button>
+      {/* <button className="btnTask2" >Contactame</button> */}
+      
+      
+
       
       
       
